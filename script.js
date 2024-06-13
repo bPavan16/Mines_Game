@@ -6,6 +6,8 @@ const cashbox = document.getElementById("cash");
 const walletAmount = document.getElementById("wallet-amount");
 const Amount = document.getElementById("Amount");
 
+let betvalue=0;
+
 let eneble = false;
 
 let arr = new Array(25);
@@ -34,7 +36,7 @@ const ShowAll = () => {
 // auto.addEventListener("click", ShowAll);
 
 bet.addEventListener("click", () => {
-  let betvalue = parseInt(Amount.value);
+  betvalue = parseInt(Amount.value);
 
   // console.log(walletAmount.value);
   cash = 0;
@@ -105,5 +107,10 @@ bet.addEventListener("click", () => {
 
 cashbox.addEventListener("click", () => {
   ShowAll();
-  walletAmount.value = parseInt(walletAmount.value) + cash;
+  if(cash==0)
+  walletAmount.value = parseInt(walletAmount.value) + 0;
+  else
+  walletAmount.value = parseInt(walletAmount.value) + cash+betvalue;
+
+    
 });
