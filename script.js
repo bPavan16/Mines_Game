@@ -95,7 +95,7 @@ bet.addEventListener("click", () => {
         ShowAll();
       } else {
         this.classList.add("diamond");
-        cash += betvalue * multiplier;
+        cash +=( betvalue * multiplier / 100);
       }
     });
 
