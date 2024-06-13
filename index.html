@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mines Game</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <nav>
+            <ul>
+                <li><a class="myHead" href="#">MINES</a></li>
+            </ul>
+            <ul>
+                <li>
+                    <div id="wallet">
+                        <span>Wallet: </span>
+                        <input id="wallet-amount" type="number" value="1000" readonly>
+                        <button id="add-amount">Add Amount</button>
+                    </div>
+                </li>
+            </ul>
+            <ul>
+                <!-- <li><a href="#">Home</a></li>
+                <li><a href="#">Rules</a></li>
+                <li><a href="#">About</a></li> -->
+            </ul>
+        </nav>
+
+        <section id="Game">
+
+            <div id="sidebar">
+                <label for="bet-amt">Bet Amount:</label>
+                <input type="number" id="Amount" min="1" value="0">
+                <label for="mines">Number of Mines:</label>
+                <input type="number" id="mines-count" min="1" max="25" value="5">
+                <button id="bet">BET</button>
+                <!-- <button id="auto">AUTO</button> -->
+                <button id="cash">CASH OUT</button>
+            </div>
+
+            <div id="mines-game">
+                <!-- Game grid will be generated here -->
+            </div>
+
+        </section>
+
+        <script src="script.js"></script>
+    </body>
+
+</html>
