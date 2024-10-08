@@ -20,7 +20,7 @@ for (let i = 0; i < 25; i++) {
 }
 
 let cash = 0;
-
+let cashTemp =0;
 const ShowAll = () => {
   for (let i = 0; i < 25; i++) {
     gameGrid.children[i].classList.add("opac");
@@ -37,6 +37,7 @@ const ShowAll = () => {
 
 bet.addEventListener("click", () => {
   betvalue = parseInt(Amount.value);
+
 
   // console.log(walletAmount.value);
   cash = 0;
@@ -110,7 +111,7 @@ cashbox.addEventListener("click", () => {
   if(cash==0)
   walletAmount.value = parseInt(walletAmount.value) + 0;
   else
-  walletAmount.value = parseInt(walletAmount.value) + cash+betvalue;
+  walletAmount.value = parseInt(walletAmount.value) + cash+betvalue+betvalue;
 
     
 });
