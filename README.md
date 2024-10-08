@@ -8,4 +8,4 @@
 * TODO : Need to Improve the UI
 
 
-check it out at : https://bpavan16.github.io/Game/
+check it out at : https://bpavan16.github.io/Mines_Game
